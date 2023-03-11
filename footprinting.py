@@ -28,6 +28,7 @@ def descargar_fichero(url, nombre_archivo):
 
     with open(ruta_archivo,'r') as fichero:
         contenido = fichero.read()
+        print(colored("El contenido del archivo es el siguiente: ","green"))
         print(contenido)
         print(colored("El contenido del archivo se ha guardado en: "+ ruta_archivo ,"green"))
 
