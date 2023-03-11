@@ -20,9 +20,8 @@ def mostrar_menu():
     print()
     print(colored("\t 1. FootPrinting",'green'))
     print(colored("\t 2. Escaneo de puertos con Nmap",'red'))
-    print(colored("\t 3. Busqueda de exploits para metasploit",'blue'))
-    print(colored("\t 4. Busqueda de payloads para exploits de metasploit", 'blue'))
-    print(colored("\t 5. Consultar a ChatGPT", 'yellow'))
+    print(colored("\t 3. Busqueda de modulos en metasploit",'blue'))
+    print(colored("\t 4. Consultar a ChatGPT", 'yellow'))
     print()
     print("Escribe 'salir' para salir del menú")
 

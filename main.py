@@ -20,8 +20,7 @@ funciones.mostrar_intro()
 opciones = {'1': footprinting.footprinting,
             '2': fingerprinting.fingerprinting,
             '3': metasploit.buscarexploits,
-            '4': metasploit.buscarpayloads,
-            '5': chatgpt.hablar
+            '4': chatgpt.hablar
             }
 
 while True:
