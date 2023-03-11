@@ -1,3 +1,5 @@
+import shutil
+
 import pyfiglet
 from termcolor import colored
 import funcionesbasicas as funciones
@@ -31,7 +33,7 @@ while  True:
         print(colored("Cerrando el menú ....",'blue'))
         break
 
-    print(colored("Seleccionaste la opcion: ",'red'), seleccion)
+    #print(colored("Seleccionaste la opcion: ",'red'), seleccion)
 
 
     # Comprobacion de la seleccion correcta
@@ -40,8 +42,18 @@ while  True:
         funciones.barrer_pantalla()
     else:
         os.system('clear')
-        print(colored("Seleccionaste la opcion: ", 'red'), seleccion)
-        print(colored("Selecciona una de las opciones del menu",'red'))
+        #print(colored("Seleccionaste la opcion: ", 'red'), seleccion)
+        # Recopilar el tamaño de la shell para adecuar el texto
+        texto_error = "La opcion que has seleccionado no esta contemplada en el menu"
+        ancho_shell, _ = shutil.get_terminal_size()
+        # Adecuar el texto a la shell
+        longitud_total = ancho_shell - len(texto_error)
+        caracter_relleno = "-"
+
+        # Crear la cadena compuesta
+        mensaje_error = texto_error.center(longitud_total,caracter_relleno)
+        print(colored(mensaje_error,'red'))
+
         funciones.mostrar_menu()
 
 
