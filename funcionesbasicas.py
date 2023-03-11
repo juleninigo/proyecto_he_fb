@@ -16,21 +16,24 @@ def mostrar_intro():
     print(colored("Ahora se lanzará el menu", 'yellow'))
 def mostrar_menu():
     # Imprimir opciones del menú
+    # Cada vez que se añadan opciones al menu hay que modificar el diccionario opciones en el fichero main.py
     print()
     print(colored("\t 1. FootPrinting",'green'))
     print(colored("\t 2. Escaneo de puertos con Nmap",'red'))
     print(colored("\t 3. Busqueda de exploits para metasploit",'blue'))
-    print(colored("\t 3. Busqueda de payloads para exploits de metasploit", 'blue'))
+    print(colored("\t 4. Busqueda de payloads para exploits de metasploit", 'blue'))
+    print(colored("\t 5. Consultar a ChatGPT", 'yellow'))
     print()
     print("Escribe 'salir' para salir del menú")
 
 
 def barrer_pantalla():
         print()
-        barrer = input(colored("Quieres limpiar la pantalla (S/N)",'yellow'))
+        barrer = input(colored("Quieres limpiar la pantalla (S/N): ",'yellow'))
 
         if barrer.upper() == "S":
             os.system('clear')
             mostrar_intro()
         else:
             pass
+

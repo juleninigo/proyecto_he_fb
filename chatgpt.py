@@ -1,0 +1,2 @@
+def hablar():
+    print("saludos")
