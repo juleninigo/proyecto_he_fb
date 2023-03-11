@@ -305,3 +305,7 @@ poetry.toml
 pyrightconfig.json
 
 # End of https://www.toptal.com/developers/gitignore/api/python,pycharm,linux
+
+# Que no se guarden los resultados de las funciones
+
+resultados/
