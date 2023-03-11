@@ -21,6 +21,15 @@ def fingerprinting():
         for puerto, estado in scanner[host]['tcp'].items():
             if estado['state'] == 'open':
                 print('  Puerto:', puerto, '- Estado:', estado['state'])
+                #Comprobar existencia de la carpeta
+                if not os.path.exists("resultados/nmapscans"):
+                    os.makedirs("resultados/nmapscans")
+
+                ruta_archivo = os.path.join("resultados/nmapscans", ip)
+                with open(ruta_archivo,'w') as fichero:
+                    contenido = f"El puerto {puerto} esta abierto\n"
+                    fichero.write(contenido)
+                print(colored("El contenido del escaneo se ha guardado en: "+ ruta_archivo,"green"))
 
 
 
