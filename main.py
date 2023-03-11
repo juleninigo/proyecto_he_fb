@@ -24,7 +24,7 @@ opciones = {'1': footprinting.footprinting,
             '5': chatgpt.hablar
             }
 
-while  True:
+while True:
     funciones.mostrar_menu()
 
     seleccion = input(colored("Selecciona una opción: ",'yellow'))
