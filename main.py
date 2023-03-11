@@ -4,7 +4,7 @@ import pyfiglet
 from termcolor import colored
 import funcionesbasicas as funciones
 import footprinting
-import nmap
+import fingerprinting
 import metasploit
 import chatgpt
 import os
@@ -18,7 +18,7 @@ funciones.mostrar_intro()
 # Crear un diccionario con las opciones para ejecutar las funciones
 
 opciones = {'1': footprinting.footprinting,
-            '2': nmap.nmap,
+            '2': fingerprinting.fingerprinting,
             '3': metasploit.buscarexploits,
             '4': metasploit.buscarpayloads,
             '5': chatgpt.hablar

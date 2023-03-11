@@ -4,7 +4,7 @@
 from termcolor import colored
 import funcionesbasicas as funciones
 import footprinting
-import nmap
+import fingerprinting
 import metasploit
 import os
 import requests
