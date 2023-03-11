@@ -1,2 +1,4 @@
+import openai
+
 def hablar():
-    print("saludos")
+    print("mondongo")
