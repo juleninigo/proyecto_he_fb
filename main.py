@@ -6,7 +6,6 @@ import funcionesbasicas as funciones
 import footprinting
 import fingerprinting
 import metasploit
-import chatgpt
 import os
 from shutil import get_terminal_size
 
