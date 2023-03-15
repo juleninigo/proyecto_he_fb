@@ -68,4 +68,3 @@ def comprobarsqlinjection():
 
 
 
-comprobarsqlinjection()

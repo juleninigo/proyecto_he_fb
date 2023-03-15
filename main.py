@@ -9,6 +9,7 @@ import metasploit
 import os
 from shutil import get_terminal_size
 
+import sqlmap
 
 # Mostrar introduccion
 
@@ -18,7 +19,8 @@ funciones.mostrar_intro()
 
 opciones = {'1': footprinting.footprinting,
             '2': fingerprinting.fingerprinting,
-            '3': metasploit.buscarexploits
+            '3': metasploit.buscarexploits,
+            '4': sqlmap.comprobarsqlinjection
             }
 
 while True:
