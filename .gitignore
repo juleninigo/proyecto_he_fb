@@ -309,3 +309,4 @@ pyrightconfig.json
 # Que no se guarden los resultados de las funciones
 
 resultados/
+.txt
