@@ -45,7 +45,7 @@ def comprobarsqlinjection():
         }
 
         with open('headers.txt','w') as f:
-            f.write(f"Headers:\n{response.headers}\n\n")
+            f.write(f"Headers:\n{response}\n\n")
 
         # Comprobar existencia de la carpeta
         if not os.path.exists("request.txt"):

@@ -1,10 +1,14 @@
-GET /dvwa/vulnerabilities/sqli_blind/?id=1&Submit=Submit HTTP/1.1
-Host: 192.168.179.129
+GET /dvwa/vulnerabilities/sqli/?id=1&Submit=Submit HTTP/1.1
+Host: localhost
 User-Agent: Mozilla/5.0 (X11; Linux x86_64; rv:102.0) Gecko/20100101 Firefox/102.0
 Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,*/*;q=0.8
 Accept-Language: en-US,en;q=0.5
-Accept-Encoding: gzip, deflate
+Accept-Encoding: gzip, deflate, br
+Referer: http://localhost/dvwa/vulnerabilities/sqli/
 Connection: keep-alive
-Referer: http://192.168.179.129/dvwa/vulnerabilities/sqli_blind/
-Cookie: security=low; PHPSESSID=5f1db0424e68051cccc8d4ac30ad8143
+Cookie: security=low; PHPSESSID=e6d0232136d3e5a731e06befa9c6b2a3
 Upgrade-Insecure-Requests: 1
+Sec-Fetch-Dest: document
+Sec-Fetch-Mode: navigate
+Sec-Fetch-Site: same-origin
+Sec-Fetch-User: ?1
